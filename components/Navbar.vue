@@ -50,7 +50,7 @@ onMounted(() => {
     </el-sub-menu>
 
     <el-tooltip content="项目源码">
-      <el-link :underline="false" @click="openUrl('http://10.102.81.50/gitlab/admin3/wiki3')">
+      <el-link :underline="false" @click="openUrl(appConfig.sourceUrl)">
         <AdminIcon name="i-logos-gitlab" class="mx-2 text-xl" />
       </el-link>
     </el-tooltip>

@@ -26,17 +26,17 @@ function handleClickLink(link: string) {
 </script>
 
 <template>
-  <div class="inline-block w[130px] mx1 my1">
+  <div class="mx1 my1 inline-block w[130px]">
     <el-tooltip :content="title">
       <el-card
-        shadow="hover" class="cursor-pointer hover:transform hover:-translate-y-2 duration-300 text-center"
+        shadow="hover" class="cursor-pointer text-center duration-300 hover:transform hover:-translate-y-2"
         @click="handleClickLink(link)"
       >
         <div>
-          <AdminIcon v-if="icon" :name="icon" class="text-2xl el-icon" />
-          <img v-if="image" :src="image" class="w-8 h-8 m-0 m-auto">
+          <AdminIcon v-if="icon" :name="icon" class="el-icon text-2xl" />
+          <img v-if="image" :src="image" class="m-0 m-auto h-8 w-8">
         </div>
-        <div class="text-sm mt1">
+        <div class="mt1 text-sm">
           {{ title }}
         </div>
       </el-card>
