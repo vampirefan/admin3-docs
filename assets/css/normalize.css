@@ -1,0 +1,51 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--doc-bg);
+  transition: background-color var(--t-color);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  color: var(--doc-text);
+}
+
+a {
+  font-weight: 500;
+  color: var(--doc-text-accent);
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+p a code {
+  font-weight: 400;
+  color: var(--doc-text-accent);
+}
+
+kbd,
+code {
+  font-family: var(--font-family-code);
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9em;
+  background-color: var(--doc-bg-light);
+  border-radius: 3px;
+  overflow-wrap: break-word;
+  transition: background-color var(--t-color);
+}
+
+:root {
+  scroll-behavior: smooth
+}

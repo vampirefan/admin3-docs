@@ -1,0 +1,13 @@
+# for offline pack-util
+node_modules_pack
+
+yarn.lock
+
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist

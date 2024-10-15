@@ -1,0 +1,78 @@
+{
+  // ========== FileNesting Config ==========
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "README.md": "backup.sh, deploy.sh, index.html, LICENSE",
+    "Jenkinsfile": "Dockerfile, k8s.yaml, k8s-svc.yaml",
+    "nuxt.config.ts": "*config.ts, *config.json, .env.*",
+    "package.json": ".gitignore, yarn.lock, eslint.config.js"
+  },
+  // ========== ESlint Config ==========
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  // ========== cSpell Config ==========
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/objects",
+    ".vscode",
+    ".vscode-insiders",
+    "content"
+  ],
+  "cSpell.words": [
+    "antfu",
+    "astro",
+    "Attributify",
+    "bumpp",
+    "cascader",
+    "Commitizen",
+    "Cpath",
+    "Csvg",
+    "dimm",
+    "DISTRO",
+    "docus",
+    "fzxsb",
+    "Gitee",
+    "iconify",
+    "intellij",
+    "nuxt",
+    "nuxtjs",
+    "octocat",
+    "ofetch",
+    "openai",
+    "pinceau",
+    "Pinia",
+    "Snipaste",
+    "sogou",
+    "tada",
+    "taze",
+    "tiktok",
+    "tinymce",
+    "todos",
+    "twemoji",
+    "uncategorized",
+    "unocss",
+    "unstorage",
+    "Vite",
+    "vitepress",
+    "vitesse",
+    "vuepress",
+    "vueuse",
+    "Vuex"
+  ]
+}
