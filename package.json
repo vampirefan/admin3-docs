@@ -15,7 +15,7 @@
     "preview": "nuxt preview --port=8083",
     "postinstall": "nuxt prepare",
     "commit": "git add . && czg && git push",
-    "release": "bumpp README.md package.json app.config.ts Jenkinsfile",
+    "release": "bumpp README.md package.json app.config.ts",
     "taze": "taze -wIr"
   },
   "dependencies": {

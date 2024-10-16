@@ -31,9 +31,12 @@ onMounted(() => {
 
 <template>
   <el-menu class="navbar" mode="horizontal" :ellipsis="false" :default-active="route.path">
-    <el-link class="text-2xl" :underline="false" type="success" @click="navigateTo('/')">
-      <img src="/image/admin3-logo.png" class="mr h10 w10">
-      <span class="color-teal-7 font-bold font-serif">Admin 3</span>
+    <el-link class="text-2xl font-serif" :underline="false" type="success" @click="navigateTo('/')">
+      <img src="/image/admin3-logo.png" class="h10 w10">
+      <span class="mx color-teal-7 font-bold">Admin 3</span>
+      <el-tag class="ml text-lg" type="success">
+        {{ config.version }}
+      </el-tag>
     </el-link>
     <div class="flex-grow" />
     <el-sub-menu v-for="link of navTree" :key="link._path" :index="link._path">
@@ -51,7 +54,10 @@ onMounted(() => {
 
     <el-tooltip content="项目源码">
       <el-link :underline="false" @click="openUrl(appConfig.sourceUrl)">
-        <Icon :name="appConfig.sourceUrl?.includes('github') ? 'i-logos-github-icon' : 'i-logos-gitlab'" class="mx-2 text-xl" />
+        <Icon
+          :name="appConfig.sourceUrl?.includes('github') ? 'i-logos-github-icon' : 'i-logos-gitlab'"
+          class="mx-2 text-xl"
+        />
       </el-link>
     </el-tooltip>
 
