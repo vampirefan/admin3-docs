@@ -25,6 +25,8 @@ export default defineConfig({
     'i-ep-menu',
     'i-logos-gitlab',
     'i-logos-github-icon',
+    'i-logos-vue',
+    'i-logos-markdown',
     'i-twemoji-beaming-face-with-smiling-eyes',
     'i-twemoji-blue-book',
     'i-twemoji-books',

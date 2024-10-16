@@ -32,8 +32,8 @@ onMounted(() => {
 <template>
   <el-menu class="navbar" mode="horizontal" :ellipsis="false" :default-active="route.path">
     <el-link class="text-2xl" :underline="false" type="success" @click="navigateTo('/')">
-      <img src="/image/admin3-logo.png" class="mr h9 w9">
-      Admin 3
+      <img src="/image/admin3-logo.png" class="mr h10 w10">
+      <span class="color-teal-7 font-bold font-serif">Admin 3</span>
     </el-link>
     <div class="flex-grow" />
     <el-sub-menu v-for="link of navTree" :key="link._path" :index="link._path">
