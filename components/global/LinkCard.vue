@@ -33,7 +33,7 @@ function handleClickLink(link: string) {
         @click="handleClickLink(link)"
       >
         <div>
-          <AdminIcon v-if="icon" :name="icon" class="el-icon text-2xl" />
+          <Icon v-if="icon" :name="icon" class="el-icon text-2xl" />
           <img v-if="image" :src="image" class="m-0 m-auto h-8 w-8">
         </div>
         <div class="mt1 text-sm">

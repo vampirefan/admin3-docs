@@ -11,12 +11,12 @@ const route = useRoute()
   <aside class="sidebar">
     <el-menu class="mt" router :ellipsis="false" :default-active="route.path" unique-opened>
       <el-menu-item index="/" @click="navigateTo('/')">
-        <AdminIcon name="i-twemoji-house-with-garden" />
+        <Icon name="i-twemoji-house-with-garden" />
         <span class="text-base font-600">介绍</span>
       </el-menu-item>
       <el-sub-menu v-for="link of navTree" :key="link._path" :index="link._path">
         <template #title>
-          <AdminIcon :name="link.icon" />
+          <Icon :name="link.icon" />
           <span class="text-base font-600">{{ link.title }}</span>
         </template>
         <el-menu-item

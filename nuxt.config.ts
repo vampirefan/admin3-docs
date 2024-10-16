@@ -31,7 +31,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@unocss/nuxt',
     '@vueuse/nuxt',
-    // '@pinia/nuxt',
   ],
 
   content: {

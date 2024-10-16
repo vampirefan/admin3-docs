@@ -7,7 +7,7 @@ function toggleDark() {
 
 <template>
   <el-link :underline="false" @click="toggleDark">
-    <AdminIcon v-if="color === 'dark'" name="i-twemoji-last-quarter-moon-face" />
-    <AdminIcon v-else name="i-twemoji-sun" />
+    <Icon v-if="color === 'dark'" name="i-twemoji-last-quarter-moon-face" />
+    <Icon v-else name="i-twemoji-sun" />
   </el-link>
 </template>

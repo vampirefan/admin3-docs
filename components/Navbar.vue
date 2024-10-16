@@ -38,7 +38,7 @@ onMounted(() => {
     <div class="flex-grow" />
     <el-sub-menu v-for="link of navTree" :key="link._path" :index="link._path">
       <template #title>
-        <AdminIcon :name="link.icon" />
+        <Icon :name="link.icon" />
         <span class="text-lg font-bold">{{ link.title }}</span>
       </template>
       <el-menu-item
@@ -51,7 +51,7 @@ onMounted(() => {
 
     <el-tooltip content="项目源码">
       <el-link :underline="false" @click="openUrl(appConfig.sourceUrl)">
-        <AdminIcon name="i-logos-gitlab" class="mx-2 text-xl" />
+        <Icon :name="appConfig.sourceUrl?.includes('github') ? 'i-logos-github-icon' : 'i-logos-gitlab'" class="mx-2 text-xl" />
       </el-link>
     </el-tooltip>
 
